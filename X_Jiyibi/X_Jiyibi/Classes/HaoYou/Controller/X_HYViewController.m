@@ -7,46 +7,20 @@
 //
 
 #import "X_HYViewController.h"
-#import "X_HYTableViewCell.h"
-#import "X_AddViewController.h"
-#import "X_MessageViewController.h"
-#import "X_ChatViewController.h"
-#import <EaseMob.h>
+/**
+ *  <#Description#>
+ */
 @interface X_HYViewController ()
-@property(nonatomic,strong)NSMutableArray *contArr;
+
 @end
 
 @implementation X_HYViewController
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
-    [[EaseMob sharedInstance].chatManager asyncFetchBuddyListWithCompletion:^(NSArray *buddyList, EMError *error) {
 
-        if (!error) {
-            NSLog(@"获取成功 -- %@", buddyList);
-
-            [self.contArr removeAllObjects];
-            [self.contArr addObjectsFromArray:buddyList];
-            [self.tableView reloadData];
-        }
-    } onQueue:dispatch_get_main_queue()];
-
-}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    //注册cell
-    [self.tableView registerNib:[UINib nibWithNibName:@"X_HYTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
-    //添加按钮
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"添加" style:UIBarButtonItemStylePlain target:self action:@selector(rightAC)];
-    
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-
-}
-//添加按钮事件
--(void)rightAC{
-    X_AddViewController *addVC = [[X_AddViewController alloc]init];
-    [self.navigationController pushViewController:addVC animated:YES];
-    
+    /**
+     *  赛那
+     */
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,37 +32,24 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Incomplete implementation, return the number of sections
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete implementation, return the number of rows
-    return 10;
+    return 0;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    X_HYTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
-    if (cell == nil) {
-        cell = [[X_HYTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    }
-
-
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    
+    // Configure the cell...
     
     return cell;
 }
-//设置行高
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 250;
-}
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    X_ChatViewController *chatVC = [[X_ChatViewController alloc]init];
-    EMBuddy *buddy = self.contArr[indexPath.row];
-    chatVC.chatter = buddy.username;
-    [self.navigationController pushViewController:chatVC animated:YES];
+*/
 
-
-}
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

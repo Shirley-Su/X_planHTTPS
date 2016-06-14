@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -56,6 +56,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" red="0.20145333430000001" green="1" blue="0.95356330330000005" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="yij-FA-J0t" firstAttribute="leading" secondItem="KjL-Tf-9p1" secondAttribute="trailing" constant="5" id="6p5-hD-VZq"/>
                     <constraint firstItem="waP-mX-7Tm" firstAttribute="top" secondItem="yij-FA-J0t" secondAttribute="bottom" constant="5" id="8UX-T3-tDp"/>
@@ -80,7 +81,7 @@
                 <outlet property="noteNameLabel" destination="T23-eZ-D0H" id="GOc-IW-dzG"/>
                 <outlet property="timeLabel" destination="waP-mX-7Tm" id="qyk-63-xqW"/>
             </connections>
-            <point key="canvasLocation" x="212.5" y="371.5"/>
+            <point key="canvasLocation" x="296.5" y="412.5"/>
         </tableViewCell>
     </objects>
 </document>

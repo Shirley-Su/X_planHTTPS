@@ -32,7 +32,7 @@
 }
 #pragma mark - 添加按钮
 -(void)addNavigationTiem{
-    //登录 / 注销按钮
+    //注销按钮
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注销" style:UIBarButtonItemStylePlain target:self action:@selector(zhixiao)];
 
 }
