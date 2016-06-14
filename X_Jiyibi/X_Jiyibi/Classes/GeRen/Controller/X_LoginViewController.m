@@ -43,7 +43,7 @@
 // xmg 123
 - (IBAction)login:(id)sender {
     
-<<<<<<< HEAD
+
 
     
         BOOL isAutoLogin = [[EaseMob sharedInstance].chatManager isAutoLoginEnabled];
@@ -66,10 +66,10 @@
 - (void)showAlertControllerWithError:(EMError *)error {
     
     UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"登录失败" message:error.description preferredStyle:UIAlertControllerStyleAlert];
-=======
+
     // 提示用户，正在登录ing...
     [MBProgressHUD showMessage:@"正在登录ing..."];
->>>>>>> abe61c77eb2d5b12c5117912bc87ae9b86d2aa96
+
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
