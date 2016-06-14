@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WelcomeView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rls-ix-Ta9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doubi.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wrj-jr-hyR">
+                    <rect key="frame" x="137" y="120" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="UHH-uq-jKx"/>
+                        <constraint firstAttribute="width" constant="100" id="mlb-oa-2CW"/>
+                    </constraints>
+                </imageView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="随时随地 记一笔" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rgs-X6-5yc">
+                    <rect key="frame" x="37" y="240" width="300" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="4QF-Uk-eUk"/>
+                        <constraint firstAttribute="height" constant="50" id="xMO-55-kej"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="屏幕快照 2016-06-14 上午8.14.32.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mfy-UB-WBZ">
+                    <rect key="frame" x="33" y="120" width="308" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="308" id="JaJ-8b-NR4"/>
+                        <constraint firstAttribute="height" constant="150" id="N9m-G7-g8R"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rls-ix-Ta9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="03Y-l9-ojc"/>
+                <constraint firstItem="Mfy-UB-WBZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="120" id="E9S-yE-5uL"/>
+                <constraint firstItem="rls-ix-Ta9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Fqg-0g-Rbf"/>
+                <constraint firstItem="Rgs-X6-5yc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="P2T-xR-f9C"/>
+                <constraint firstItem="Rgs-X6-5yc" firstAttribute="top" secondItem="wrj-jr-hyR" secondAttribute="bottom" constant="20" id="WRk-ZR-x8q"/>
+                <constraint firstItem="wrj-jr-hyR" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Yl4-IB-2CG"/>
+                <constraint firstItem="Mfy-UB-WBZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ere-nW-eyd"/>
+                <constraint firstItem="wrj-jr-hyR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="120" id="jLG-Ec-pPA"/>
+                <constraint firstAttribute="trailing" secondItem="rls-ix-Ta9" secondAttribute="trailing" id="kGK-8e-VXS"/>
+                <constraint firstAttribute="bottom" secondItem="rls-ix-Ta9" secondAttribute="bottom" id="pTR-XY-aNf"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <connections>
+                <outlet property="iconView" destination="wrj-jr-hyR" id="Rzg-Hy-kGI"/>
+                <outlet property="sloganView" destination="Mfy-UB-WBZ" id="cyK-jv-KBc"/>
+                <outlet property="textLabel" destination="Rgs-X6-5yc" id="Tqx-5L-Rn8"/>
+            </connections>
+            <point key="canvasLocation" x="226.5" y="414.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="doubi.jpg" width="200" height="200"/>
+        <image name="屏幕快照 2016-06-14 上午8.14.32.png" width="294" height="157"/>
+    </resources>
+</document>

@@ -1,0 +1,5 @@
+platform:ios,'9.2'
+target 'X_Jiyibi' do
+pod 'EaseMobSDK'
+
+end
