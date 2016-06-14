@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D61B68C61D0FD45C006D30EE /* X_LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D61B68C11D0FD45C006D30EE /* X_LoginViewController.m */; };
+		D61B68C71D0FD45C006D30EE /* X_LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D61B68C21D0FD45C006D30EE /* X_LoginViewController.xib */; };
+		D61B68C81D0FD45C006D30EE /* X_RegsterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D61B68C41D0FD45C006D30EE /* X_RegsterViewController.m */; };
+		D61B68C91D0FD45C006D30EE /* X_RegsterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D61B68C51D0FD45C006D30EE /* X_RegsterViewController.xib */; };
 		D63C5DC21D0E7930009AB219 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D63C5DC11D0E7930009AB219 /* main.m */; };
 		D63C5DC51D0E7930009AB219 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D63C5DC41D0E7930009AB219 /* AppDelegate.m */; };
 		D63C5DCD1D0E7930009AB219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63C5DCC1D0E7930009AB219 /* Assets.xcassets */; };
@@ -34,8 +38,6 @@
 		D63C5E211D0E8609009AB219 /* NLArenaNavBar64@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63C5E201D0E8609009AB219 /* NLArenaNavBar64@2x.png */; };
 		D63C5E381D0EE14B009AB219 /* X_TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D63C5E361D0EE14B009AB219 /* X_TableViewCell.m */; };
 		D63C5E391D0EE14B009AB219 /* X_TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D63C5E371D0EE14B009AB219 /* X_TableViewCell.xib */; };
-		D63C5E3D1D0EE9A8009AB219 /* X_LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63C5E3B1D0EE9A8009AB219 /* X_LoginViewController.m */; };
-		D63C5E3E1D0EE9A8009AB219 /* X_LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D63C5E3C1D0EE9A8009AB219 /* X_LoginViewController.xib */; };
 		D63C5E451D0EEA8E009AB219 /* MBProgressHUD+XMG.m in Sources */ = {isa = PBXBuildFile; fileRef = D63C5E411D0EEA8E009AB219 /* MBProgressHUD+XMG.m */; };
 		D63C5E461D0EEA8E009AB219 /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D63C5E421D0EEA8E009AB219 /* MBProgressHUD.bundle */; };
 		D63C5E471D0EEA8E009AB219 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D63C5E441D0EEA8E009AB219 /* MBProgressHUD.m */; };
@@ -53,6 +55,12 @@
 /* Begin PBXFileReference section */
 		0147E82FEA474E1ED84BAFC3 /* Pods-X_Jiyibi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-X_Jiyibi.release.xcconfig"; path = "Pods/Target Support Files/Pods-X_Jiyibi/Pods-X_Jiyibi.release.xcconfig"; sourceTree = "<group>"; };
 		9F2E843CDEFEFFB1E0E49D27 /* libPods-X_Jiyibi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-X_Jiyibi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D61B68C01D0FD45C006D30EE /* X_LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_LoginViewController.h; sourceTree = "<group>"; };
+		D61B68C11D0FD45C006D30EE /* X_LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_LoginViewController.m; sourceTree = "<group>"; };
+		D61B68C21D0FD45C006D30EE /* X_LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = X_LoginViewController.xib; sourceTree = "<group>"; };
+		D61B68C31D0FD45C006D30EE /* X_RegsterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_RegsterViewController.h; sourceTree = "<group>"; };
+		D61B68C41D0FD45C006D30EE /* X_RegsterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_RegsterViewController.m; sourceTree = "<group>"; };
+		D61B68C51D0FD45C006D30EE /* X_RegsterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = X_RegsterViewController.xib; sourceTree = "<group>"; };
 		D63C5DBD1D0E7930009AB219 /* X_Jiyibi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = X_Jiyibi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63C5DC11D0E7930009AB219 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D63C5DC31D0E7930009AB219 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -93,9 +101,6 @@
 		D63C5E351D0EE14B009AB219 /* X_TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = X_TableViewCell.h; path = X_Jiyibi/Classes/HaoYou/Controller/X_TableViewCell.h; sourceTree = SOURCE_ROOT; };
 		D63C5E361D0EE14B009AB219 /* X_TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = X_TableViewCell.m; path = X_Jiyibi/Classes/HaoYou/Controller/X_TableViewCell.m; sourceTree = SOURCE_ROOT; };
 		D63C5E371D0EE14B009AB219 /* X_TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = X_TableViewCell.xib; path = X_Jiyibi/Classes/HaoYou/Controller/X_TableViewCell.xib; sourceTree = SOURCE_ROOT; };
-		D63C5E3A1D0EE9A8009AB219 /* X_LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_LoginViewController.h; sourceTree = "<group>"; };
-		D63C5E3B1D0EE9A8009AB219 /* X_LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_LoginViewController.m; sourceTree = "<group>"; };
-		D63C5E3C1D0EE9A8009AB219 /* X_LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = X_LoginViewController.xib; sourceTree = "<group>"; };
 		D63C5E401D0EEA8E009AB219 /* MBProgressHUD+XMG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+XMG.h"; sourceTree = "<group>"; };
 		D63C5E411D0EEA8E009AB219 /* MBProgressHUD+XMG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+XMG.m"; sourceTree = "<group>"; };
 		D63C5E421D0EEA8E009AB219 /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
@@ -212,9 +217,12 @@
 				D63C5E3F1D0EEA8E009AB219 /* MBProgressHUD */,
 				D63C5E031D0E7BFF009AB219 /* X_GRTableViewController.h */,
 				D63C5E041D0E7BFF009AB219 /* X_GRTableViewController.m */,
-				D63C5E3A1D0EE9A8009AB219 /* X_LoginViewController.h */,
-				D63C5E3B1D0EE9A8009AB219 /* X_LoginViewController.m */,
-				D63C5E3C1D0EE9A8009AB219 /* X_LoginViewController.xib */,
+				D61B68C01D0FD45C006D30EE /* X_LoginViewController.h */,
+				D61B68C11D0FD45C006D30EE /* X_LoginViewController.m */,
+				D61B68C21D0FD45C006D30EE /* X_LoginViewController.xib */,
+				D61B68C31D0FD45C006D30EE /* X_RegsterViewController.h */,
+				D61B68C41D0FD45C006D30EE /* X_RegsterViewController.m */,
+				D61B68C51D0FD45C006D30EE /* X_RegsterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -507,6 +515,7 @@
 				D63C5E1F1D0E8560009AB219 /* TabBar_MyLottery_selected_new@2x.png in Resources */,
 				D63C5E461D0EEA8E009AB219 /* MBProgressHUD.bundle in Resources */,
 				D63C5E1E1D0E8560009AB219 /* TabBar_MyLottery_new@2x.png in Resources */,
+				D61B68C71D0FD45C006D30EE /* X_LoginViewController.xib in Resources */,
 				D63C5DD01D0E7930009AB219 /* LaunchScreen.storyboard in Resources */,
 				D6645B161D0F8B05001D6AE1 /* 屏幕快照 2016-06-14 上午8.44.30.png in Resources */,
 				D63C5E0A1D0E7FA5009AB219 /* clock_320px_1197016_easyicon.net.png in Resources */,
@@ -515,7 +524,6 @@
 				D63C5E191D0E8560009AB219 /* TabBar_Discovery_selected_new@2x.png in Resources */,
 				D63C5E1C1D0E8560009AB219 /* TabBar_LotteryHall_new@2x.png in Resources */,
 				D63C5E391D0EE14B009AB219 /* X_TableViewCell.xib in Resources */,
-				D63C5E3E1D0EE9A8009AB219 /* X_LoginViewController.xib in Resources */,
 				D63C5E1A1D0E8560009AB219 /* TabBar_History_new@2x.png in Resources */,
 				D63C5E1B1D0E8560009AB219 /* TabBar_History_selected_new@2x.png in Resources */,
 				D63C5E211D0E8609009AB219 /* NLArenaNavBar64@2x.png in Resources */,
@@ -525,6 +533,7 @@
 				D6645B061D0F80EE001D6AE1 /* WelcomeView.xib in Resources */,
 				D63C5E181D0E8560009AB219 /* TabBar_Discovery_new@2x.png in Resources */,
 				D63C5E161D0E8560009AB219 /* TabBar_Arena_new@2x.png in Resources */,
+				D61B68C91D0FD45C006D30EE /* X_RegsterViewController.xib in Resources */,
 				D6645B0E1D0F81CA001D6AE1 /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,7 +596,6 @@
 				D63C5E451D0EEA8E009AB219 /* MBProgressHUD+XMG.m in Sources */,
 				D63C5E021D0E7BF2009AB219 /* X_HYViewController.m in Sources */,
 				D63C5DF81D0E7AC5009AB219 /* SNTabBarItem.m in Sources */,
-				D63C5E3D1D0EE9A8009AB219 /* X_LoginViewController.m in Sources */,
 				D63C5E381D0EE14B009AB219 /* X_TableViewCell.m in Sources */,
 				D63C5DC51D0E7930009AB219 /* AppDelegate.m in Sources */,
 				D63C5DF91D0E7AC5009AB219 /* SNTabBarButton.m in Sources */,
@@ -599,8 +607,10 @@
 				D63C5E081D0E7C16009AB219 /* X_ZHTableViewController.m in Sources */,
 				D63C5DF31D0E799E009AB219 /* X_TabBarController.m in Sources */,
 				D63C5DC21D0E7930009AB219 /* main.m in Sources */,
+				D61B68C81D0FD45C006D30EE /* X_RegsterViewController.m in Sources */,
 				D6645B051D0F80EE001D6AE1 /* WelcomeView.m in Sources */,
 				D6645B101D0F81CA001D6AE1 /* MenuItem.m in Sources */,
+				D61B68C61D0FD45C006D30EE /* X_LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

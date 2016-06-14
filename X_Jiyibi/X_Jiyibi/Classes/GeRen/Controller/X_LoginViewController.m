@@ -9,8 +9,11 @@
 #import "X_LoginViewController.h"
 #import "MBProgressHUD+XMG.h"
 #import "X_GRTableViewController.h"
+#import "X_RegsterViewController.h"
 
-@interface X_LoginViewController ()
+#import <EaseMob.h>
+
+@interface X_LoginViewController ()<EMChatManagerLoginDelegate>
 //登录按钮
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
@@ -36,14 +39,25 @@
     
     UIViewController *vc = segue.destinationViewController;
     vc.title = [NSString stringWithFormat:@"%@的联系人列表", _accountField.text];
-    NSLog(@"%@--%@",segue.sourceViewController,segue.destinationViewController);
+//    NSLog(@"%@--%@",segue.sourceViewController,segue.destinationViewController);
 }
 
 // 点击了登录按钮的时候调用
-// xmg 123
 - (IBAction)login:(id)sender {
     
     // 提示用户，正在登录ing...
+    BOOL isAutoLogin = [[EaseMob sharedInstance].chatManager isAutoLoginEnabled];
+    if (!isAutoLogin) {
+        [[EaseMob sharedInstance].chatManager asyncLoginWithUsername: self.accountField.text   password: self.pwdField.text completion:^(NSDictionary *loginInfo, EMError *error) {
+            if (!error && loginInfo) {
+                NSLog(@"登录成功");
+                // 设置自动登录
+                //                [[EaseMob sharedInstance].chatManager setIsAutoLoginEnabled:NO];
+                [self dismissViewControllerAnimated:YES completion:nil];
+            }
+        } onQueue:nil];
+    }
+
     [MBProgressHUD showMessage:@"正在登录ing..."];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -52,14 +66,13 @@
         [MBProgressHUD hideHUD];
         
         // 验证下账号和密码是否正确
-        if ([_accountField.text isEqualToString:@"X_APP"] && [_pwdField.text isEqualToString:@"123"]) { // 输入正确
+        if ([_accountField.text isEqualToString:[[X_RegsterViewController alloc]init].usernameTextField.text] && [_pwdField.text isEqualToString:[[X_RegsterViewController alloc]init].passwordTextField.text]) { // 输入正确
             
             // 直接跳转
             // 跳转到联系人界面
             X_GRTableViewController *x_GRVC = [[X_GRTableViewController alloc] init];
             
-            [self.navigationController pushViewController:x_GRVC animated:YES];
-            
+            [self.navigationController popToViewController:x_GRVC animated:YES];
         }else{ // 账号或者密码错误
             
             // 提示用户账号或者密码错误
@@ -74,7 +87,11 @@
 // 记住密码开关状态改变的时候调用
 - (IBAction)rmbPwdChange:(id)sender {
     // 如果取消记住密码，自动登录也需要取消勾选
-    
+    if (_rmbPwdSwitch.on == YES) {
+        _accountField.text = [[X_RegsterViewController alloc]init].usernameTextField.text;
+        _pwdField.text =[[X_RegsterViewController alloc]init].passwordTextField.text;
+    }
+   
     if (_rmbPwdSwitch.on == NO) { // 取消记住密码
         // 取消自动登录
         [_autoLoginSwitch setOn:NO animated:YES];
@@ -89,6 +106,7 @@
     // 如果勾选了自动登录,记住密码也要勾选
     if (_autoLoginSwitch.on == YES) {
         [_rmbPwdSwitch setOn:YES animated:YES];
+    
         
     }
     
@@ -112,19 +130,21 @@
 }
 #pragma mark - 添加按钮
 -(void)addNavigationTiem{
-    //登录 / 注销按钮
+    //注销按钮
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注册" style:UIBarButtonItemStyleDone target:self action:@selector(zhuce)];
     
 }
 -(void)zhuce{
+    X_RegsterViewController *X_regsterVC = [[X_RegsterViewController alloc] init];
     
+    [self.navigationController pushViewController:X_regsterVC animated:YES];
 }
 
 // 任一一个文本框的内容改变都会调用
 - (void)textChange
 {
     _loginButton.enabled = _accountField.text.length && _pwdField.text.length;
-    NSLog(@"%@--%@",_accountField.text,_pwdField.text);
+//    NSLog(@"%@--%@",_accountField.text,_pwdField.text);
 }
 
 - (void)didReceiveMemoryWarning {
