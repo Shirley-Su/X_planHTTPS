@@ -15,6 +15,15 @@
 		D62BDEB01D1005E8009B292C /* X_AddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62BDEAA1D1005E8009B292C /* X_AddViewController.xib */; };
 		D62BDEB11D1005E8009B292C /* X_MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D62BDEAC1D1005E8009B292C /* X_MessageViewController.m */; };
 		D62BDEB21D1005E8009B292C /* X_ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D62BDEAE1D1005E8009B292C /* X_ChatViewController.m */; };
+		D62BDF211D100CC1009B292C /* X_ChatTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D62BDF141D100CC1009B292C /* X_ChatTableViewCell.m */; };
+		D62BDF221D100CC1009B292C /* X_ChatTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62BDF151D100CC1009B292C /* X_ChatTableViewCell.xib */; };
+		D62BDF231D100CC1009B292C /* X_ChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = D62BDF171D100CC1009B292C /* X_ChatView.m */; };
+		D62BDF241D100CC1009B292C /* X_HYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D62BDF191D100CC1009B292C /* X_HYTableViewCell.m */; };
+		D62BDF251D100CC1009B292C /* X_HYTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62BDF1A1D100CC1009B292C /* X_HYTableViewCell.xib */; };
+		D62BDF261D100CC1009B292C /* X_MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D62BDF1C1D100CC1009B292C /* X_MessageTableViewCell.m */; };
+		D62BDF271D100CC1009B292C /* X_MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62BDF1D1D100CC1009B292C /* X_MessageTableViewCell.xib */; };
+		D62BDF281D100CC1009B292C /* X_TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D62BDF1F1D100CC1009B292C /* X_TableViewCell.m */; };
+		D62BDF291D100CC1009B292C /* X_TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62BDF201D100CC1009B292C /* X_TableViewCell.xib */; };
 		D63C5DC21D0E7930009AB219 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D63C5DC11D0E7930009AB219 /* main.m */; };
 		D63C5DC51D0E7930009AB219 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D63C5DC41D0E7930009AB219 /* AppDelegate.m */; };
 		D63C5DCD1D0E7930009AB219 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D63C5DCC1D0E7930009AB219 /* Assets.xcassets */; };
@@ -72,6 +81,20 @@
 		D62BDEAC1D1005E8009B292C /* X_MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_MessageViewController.m; sourceTree = "<group>"; };
 		D62BDEAD1D1005E8009B292C /* X_ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_ChatViewController.h; sourceTree = "<group>"; };
 		D62BDEAE1D1005E8009B292C /* X_ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_ChatViewController.m; sourceTree = "<group>"; };
+		D62BDF131D100CC1009B292C /* X_ChatTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = X_ChatTableViewCell.h; path = ../../../../../../Desktop/X_Jiyibi/X_Jiyibi/Classes/HaoYou/Controller/X_ChatTableViewCell.h; sourceTree = "<group>"; };
+		D62BDF141D100CC1009B292C /* X_ChatTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = X_ChatTableViewCell.m; path = ../../../../../../Desktop/X_Jiyibi/X_Jiyibi/Classes/HaoYou/Controller/X_ChatTableViewCell.m; sourceTree = "<group>"; };
+		D62BDF151D100CC1009B292C /* X_ChatTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = X_ChatTableViewCell.xib; path = ../../../../../../Desktop/X_Jiyibi/X_Jiyibi/Classes/HaoYou/Controller/X_ChatTableViewCell.xib; sourceTree = "<group>"; };
+		D62BDF161D100CC1009B292C /* X_ChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = X_ChatView.h; path = ../../../../../../Desktop/X_Jiyibi/X_Jiyibi/Classes/HaoYou/Controller/X_ChatView.h; sourceTree = "<group>"; };
+		D62BDF171D100CC1009B292C /* X_ChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = X_ChatView.m; path = ../../../../../../Desktop/X_Jiyibi/X_Jiyibi/Classes/HaoYou/Controller/X_ChatView.m; sourceTree = "<group>"; };
+		D62BDF181D100CC1009B292C /* X_HYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = X_HYTableViewCell.h; path = ../../../../../../Desktop/X_Jiyibi/X_Jiyibi/Classes/HaoYou/Controller/X_HYTableViewCell.h; sourceTree = "<group>"; };
+		D62BDF191D100CC1009B292C /* X_HYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = X_HYTableViewCell.m; path = ../../../../../../Desktop/X_Jiyibi/X_Jiyibi/Classes/HaoYou/Controller/X_HYTableViewCell.m; sourceTree = "<group>"; };
+		D62BDF1A1D100CC1009B292C /* X_HYTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = X_HYTableViewCell.xib; path = ../../../../../../Desktop/X_Jiyibi/X_Jiyibi/Classes/HaoYou/Controller/X_HYTableViewCell.xib; sourceTree = "<group>"; };
+		D62BDF1B1D100CC1009B292C /* X_MessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = X_MessageTableViewCell.h; path = ../../../../../../Desktop/X_Jiyibi/X_Jiyibi/Classes/HaoYou/Controller/X_MessageTableViewCell.h; sourceTree = "<group>"; };
+		D62BDF1C1D100CC1009B292C /* X_MessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = X_MessageTableViewCell.m; path = ../../../../../../Desktop/X_Jiyibi/X_Jiyibi/Classes/HaoYou/Controller/X_MessageTableViewCell.m; sourceTree = "<group>"; };
+		D62BDF1D1D100CC1009B292C /* X_MessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = X_MessageTableViewCell.xib; path = ../../../../../../Desktop/X_Jiyibi/X_Jiyibi/Classes/HaoYou/Controller/X_MessageTableViewCell.xib; sourceTree = "<group>"; };
+		D62BDF1E1D100CC1009B292C /* X_TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = X_TableViewCell.h; path = ../../../../../../Desktop/X_Jiyibi/X_Jiyibi/Classes/HaoYou/Controller/X_TableViewCell.h; sourceTree = "<group>"; };
+		D62BDF1F1D100CC1009B292C /* X_TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = X_TableViewCell.m; path = ../../../../../../Desktop/X_Jiyibi/X_Jiyibi/Classes/HaoYou/Controller/X_TableViewCell.m; sourceTree = "<group>"; };
+		D62BDF201D100CC1009B292C /* X_TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = X_TableViewCell.xib; path = ../../../../../../Desktop/X_Jiyibi/X_Jiyibi/Classes/HaoYou/Controller/X_TableViewCell.xib; sourceTree = "<group>"; };
 		D63C5DBD1D0E7930009AB219 /* X_Jiyibi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = X_Jiyibi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63C5DC11D0E7930009AB219 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D63C5DC31D0E7930009AB219 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -291,6 +314,20 @@
 		D63C5DDF1D0E795F009AB219 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D62BDF131D100CC1009B292C /* X_ChatTableViewCell.h */,
+				D62BDF141D100CC1009B292C /* X_ChatTableViewCell.m */,
+				D62BDF151D100CC1009B292C /* X_ChatTableViewCell.xib */,
+				D62BDF161D100CC1009B292C /* X_ChatView.h */,
+				D62BDF171D100CC1009B292C /* X_ChatView.m */,
+				D62BDF181D100CC1009B292C /* X_HYTableViewCell.h */,
+				D62BDF191D100CC1009B292C /* X_HYTableViewCell.m */,
+				D62BDF1A1D100CC1009B292C /* X_HYTableViewCell.xib */,
+				D62BDF1B1D100CC1009B292C /* X_MessageTableViewCell.h */,
+				D62BDF1C1D100CC1009B292C /* X_MessageTableViewCell.m */,
+				D62BDF1D1D100CC1009B292C /* X_MessageTableViewCell.xib */,
+				D62BDF1E1D100CC1009B292C /* X_TableViewCell.h */,
+				D62BDF1F1D100CC1009B292C /* X_TableViewCell.m */,
+				D62BDF201D100CC1009B292C /* X_TableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -533,12 +570,14 @@
 				D63C5E1F1D0E8560009AB219 /* TabBar_MyLottery_selected_new@2x.png in Resources */,
 				D63C5E461D0EEA8E009AB219 /* MBProgressHUD.bundle in Resources */,
 				D63C5E1E1D0E8560009AB219 /* TabBar_MyLottery_new@2x.png in Resources */,
+				D62BDF221D100CC1009B292C /* X_ChatTableViewCell.xib in Resources */,
 				D61B68C71D0FD45C006D30EE /* X_LoginViewController.xib in Resources */,
 				D63C5DD01D0E7930009AB219 /* LaunchScreen.storyboard in Resources */,
 				D6645B161D0F8B05001D6AE1 /* 屏幕快照 2016-06-14 上午8.44.30.png in Resources */,
 				D63C5E0A1D0E7FA5009AB219 /* clock_320px_1197016_easyicon.net.png in Resources */,
 				D6645AFF1D0F7E58001D6AE1 /* beijing1.png in Resources */,
 				D63C5E1D1D0E8560009AB219 /* TabBar_LotteryHall_selected_new@2x.png in Resources */,
+				D62BDF251D100CC1009B292C /* X_HYTableViewCell.xib in Resources */,
 				D63C5E191D0E8560009AB219 /* TabBar_Discovery_selected_new@2x.png in Resources */,
 				D63C5E1C1D0E8560009AB219 /* TabBar_LotteryHall_new@2x.png in Resources */,
 				D63C5E391D0EE14B009AB219 /* X_TableViewCell.xib in Resources */,
@@ -547,12 +586,14 @@
 				D63C5E211D0E8609009AB219 /* NLArenaNavBar64@2x.png in Resources */,
 				D63C5DCD1D0E7930009AB219 /* Assets.xcassets in Resources */,
 				D6645B121D0F8433001D6AE1 /* 屏幕快照 2016-06-14 上午8.14.32.png in Resources */,
+				D62BDF291D100CC1009B292C /* X_TableViewCell.xib in Resources */,
 				D6645B0F1D0F81CA001D6AE1 /* doubi.jpg in Resources */,
 				D6645B061D0F80EE001D6AE1 /* WelcomeView.xib in Resources */,
 				D63C5E181D0E8560009AB219 /* TabBar_Discovery_new@2x.png in Resources */,
 				D63C5E161D0E8560009AB219 /* TabBar_Arena_new@2x.png in Resources */,
 				D61B68C91D0FD45C006D30EE /* X_RegsterViewController.xib in Resources */,
 				D62BDEB01D1005E8009B292C /* X_AddViewController.xib in Resources */,
+				D62BDF271D100CC1009B292C /* X_MessageTableViewCell.xib in Resources */,
 				D6645B0E1D0F81CA001D6AE1 /* Contents.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,13 +656,17 @@
 				D63C5E451D0EEA8E009AB219 /* MBProgressHUD+XMG.m in Sources */,
 				D63C5E021D0E7BF2009AB219 /* X_HYViewController.m in Sources */,
 				D63C5DF81D0E7AC5009AB219 /* SNTabBarItem.m in Sources */,
+				D62BDF231D100CC1009B292C /* X_ChatView.m in Sources */,
+				D62BDF281D100CC1009B292C /* X_TableViewCell.m in Sources */,
 				D62BDEB11D1005E8009B292C /* X_MessageViewController.m in Sources */,
 				D63C5E381D0EE14B009AB219 /* X_TableViewCell.m in Sources */,
 				D62BDEB21D1005E8009B292C /* X_ChatViewController.m in Sources */,
 				D63C5DC51D0E7930009AB219 /* AppDelegate.m in Sources */,
 				D63C5DF91D0E7AC5009AB219 /* SNTabBarButton.m in Sources */,
+				D62BDF241D100CC1009B292C /* X_HYTableViewCell.m in Sources */,
 				D63C5E471D0EEA8E009AB219 /* MBProgressHUD.m in Sources */,
 				D63C5DF01D0E7984009AB219 /* X_NamigationController.m in Sources */,
+				D62BDF211D100CC1009B292C /* X_ChatTableViewCell.m in Sources */,
 				D63C5DFF1D0E7BE5009AB219 /* X_LSViewController.m in Sources */,
 				D63C5DFC1D0E7BB4009AB219 /* X_JYBViewController.m in Sources */,
 				D63C5E051D0E7BFF009AB219 /* X_GRTableViewController.m in Sources */,
@@ -633,6 +678,7 @@
 				D6645B051D0F80EE001D6AE1 /* WelcomeView.m in Sources */,
 				D6645B101D0F81CA001D6AE1 /* MenuItem.m in Sources */,
 				D61B68C61D0FD45C006D30EE /* X_LoginViewController.m in Sources */,
+				D62BDF261D100CC1009B292C /* X_MessageTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
