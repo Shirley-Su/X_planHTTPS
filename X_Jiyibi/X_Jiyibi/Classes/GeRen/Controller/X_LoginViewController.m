@@ -34,22 +34,7 @@
 // 点击了登录按钮的时候调用
 - (IBAction)login:(id)sender {
     
-//    
-//    // 用户登录的异步Block方法
-//    [[EaseMob sharedInstance].chatManager asyncLoginWithUsername:self.accountField.text password:self.pwdField.text completion:^(NSDictionary *loginInfo, EMError *error) {
-//        
-//        if (!error) {
-//            
-//            [self.navigationController popViewControllerAnimated:NO];
-//            
-//        } else {
-//            
-//            // 显示错误信息的警告
-////            [self showAlertControllerWithError:error];
-//        }
-//    } onQueue:dispatch_get_main_queue()];
-//}
-    
+
     
         BOOL isAutoLogin = [[EaseMob sharedInstance].chatManager isAutoLoginEnabled];
         if (!isAutoLogin) {
