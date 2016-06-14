@@ -9,5 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface X_LoginViewController : UIViewController
+//登录按钮
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
+//用户名
+@property (weak, nonatomic) IBOutlet UITextField *accountField;
+//密码
+@property (weak, nonatomic) IBOutlet UITextField *pwdField;
+
+//记住密码
+@property (weak, nonatomic) IBOutlet UISwitch *rmbPwdSwitch;
+
+//自动登录
+@property (weak, nonatomic) IBOutlet UISwitch *autoLoginSwitch;
 @end

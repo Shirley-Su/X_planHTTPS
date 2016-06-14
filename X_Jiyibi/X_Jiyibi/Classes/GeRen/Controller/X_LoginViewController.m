@@ -14,24 +14,13 @@
 #import <EaseMob.h>
 
 @interface X_LoginViewController ()<EMChatManagerLoginDelegate>
-//登录按钮
-@property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
-//用户名
-@property (weak, nonatomic) IBOutlet UITextField *accountField;
-//密码
-@property (weak, nonatomic) IBOutlet UITextField *pwdField;
-
-//记住密码
-@property (weak, nonatomic) IBOutlet UISwitch *rmbPwdSwitch;
-
-//自动登录
-@property (weak, nonatomic) IBOutlet UISwitch *autoLoginSwitch;
 
 
 @end
 
 @implementation X_LoginViewController
+
 
 // 在执行跳转之前的时候调用
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -45,44 +34,58 @@
 // 点击了登录按钮的时候调用
 - (IBAction)login:(id)sender {
     
-    // 提示用户，正在登录ing...
-    BOOL isAutoLogin = [[EaseMob sharedInstance].chatManager isAutoLoginEnabled];
-    if (!isAutoLogin) {
-        [[EaseMob sharedInstance].chatManager asyncLoginWithUsername: self.accountField.text   password: self.pwdField.text completion:^(NSDictionary *loginInfo, EMError *error) {
-            if (!error && loginInfo) {
-                NSLog(@"登录成功");
-                // 设置自动登录
-                //                [[EaseMob sharedInstance].chatManager setIsAutoLoginEnabled:NO];
-                [self dismissViewControllerAnimated:YES completion:nil];
-            }
-        } onQueue:nil];
+//    
+//    // 用户登录的异步Block方法
+//    [[EaseMob sharedInstance].chatManager asyncLoginWithUsername:self.accountField.text password:self.pwdField.text completion:^(NSDictionary *loginInfo, EMError *error) {
+//        
+//        if (!error) {
+//            
+//            [self.navigationController popViewControllerAnimated:NO];
+//            
+//        } else {
+//            
+//            // 显示错误信息的警告
+////            [self showAlertControllerWithError:error];
+//        }
+//    } onQueue:dispatch_get_main_queue()];
+//}
+    
+    
+        BOOL isAutoLogin = [[EaseMob sharedInstance].chatManager isAutoLoginEnabled];
+        if (!isAutoLogin) {
+            [[EaseMob sharedInstance].chatManager asyncLoginWithUsername: self.accountField.text   password: self.pwdField.text completion:^(NSDictionary *loginInfo, EMError *error) {
+                if (!error && loginInfo) {
+                    NSLog(@"登录成功");
+                    // 设置自动登录
+                    //                [[EaseMob sharedInstance].chatManager setIsAutoLoginEnabled:NO];
+                    [self dismissViewControllerAnimated:YES completion:nil];
+                }
+            } onQueue:nil];
+    
     }
-
-    [MBProgressHUD showMessage:@"正在登录ing..."];
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
-        // 隐藏蒙版
-        [MBProgressHUD hideHUD];
-        
-        // 验证下账号和密码是否正确
-        if ([_accountField.text isEqualToString:[[X_RegsterViewController alloc]init].usernameTextField.text] && [_pwdField.text isEqualToString:[[X_RegsterViewController alloc]init].passwordTextField.text]) { // 输入正确
-            
-            // 直接跳转
-            // 跳转到联系人界面
-            X_GRTableViewController *x_GRVC = [[X_GRTableViewController alloc] init];
-            
-            [self.navigationController popToViewController:x_GRVC animated:YES];
-        }else{ // 账号或者密码错误
-            
-            // 提示用户账号或者密码错误
-            [MBProgressHUD showError:@"账号或者密码错误"];
-        }
-    });
-   
-    
     
 }
+
+// 显示警告控制器使用一个错误信息
+# pragma mark - Error Alert Controller
+- (void)showAlertControllerWithError:(EMError *)error {
+    
+    UIAlertController * alertController = [UIAlertController alertControllerWithTitle:@"登录失败" message:error.description preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction * actionCancel = [UIAlertAction actionWithTitle:@"好" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    [alertController addAction:actionCancel];
+    
+    [self showDetailViewController:alertController sender:nil];
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    
+    [self.view reloadInputViews];
+}
+
 
 // 记住密码开关状态改变的时候调用
 - (IBAction)rmbPwdChange:(id)sender {
@@ -126,7 +129,9 @@
     
     //添加注册按钮
     [self addNavigationTiem];
-    
+//    [self.navigationItem setHidesBackButton:YES animated:NO];
+//    
+//    [self.navigationController setNavigationBarHidden:YES];
 }
 #pragma mark - 添加按钮
 -(void)addNavigationTiem{

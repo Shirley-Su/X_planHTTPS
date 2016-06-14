@@ -15,7 +15,7 @@
 @end
 
 @implementation X_RegsterViewController
-
+@synthesize passwordTextField,usernameTextField, passwordTX;
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -24,29 +24,26 @@
 
 }
 - (IBAction)didRegisterClicged:(UIButton *)sender {
-    // 用户注册的异步Block方法
-    
-    if (_usernameTextField.text == nil || _passwordTextField.text == nil || _passwordTX.text == nil) {
-        [MBProgressHUD showError:@"账号或者密码是空"];
-    }else if (![_passwordTextField.text isEqualToString:_passwordTX.text]){
-        [MBProgressHUD showError:@"密码不一致"];
-    }else{
-        [[EaseMob sharedInstance].chatManager asyncRegisterNewAccount:_usernameTextField.text password:_passwordTextField.text withCompletion:^(NSString *username, NSString *password, EMError *error) {
-            
+   
+    //用户注册的异步block方法
+    [[EaseMob sharedInstance].chatManager asyncRegisterNewAccount:self.usernameTextField.text password:self.passwordTextField.text  withCompletion:^(NSString *username, NSString *password, EMError *error) {
+        if (usernameTextField.text == nil || passwordTextField.text == nil || passwordTX.text == nil) {
+            [MBProgressHUD showError:@"账号或者密码是空"];
+        }else if (![passwordTextField.text isEqualToString:passwordTX.text]){
+            [MBProgressHUD showError:@"密码不一致"];
+        }else{
             if (!error) {
-               
-                    [self dismissViewControllerAnimated:YES completion:nil];
-                [self.navigationController pushViewController:[[X_LoginViewController alloc]init] animated:YES];
+                NSLog(@"注册成功");
+                X_LoginViewController *loginVC = [[X_LoginViewController alloc]init];
+                loginVC.accountField.text = self.usernameTextField.text;
+                loginVC.pwdField.text = self.usernameTextField.text;
                 
-               
-
-                
+                [self.navigationController popViewControllerAnimated:YES];
             }
-            
-        } onQueue:dispatch_get_main_queue()];
-        
+        }
 
-    }
+    } onQueue:nil];
+
     
 }
 
