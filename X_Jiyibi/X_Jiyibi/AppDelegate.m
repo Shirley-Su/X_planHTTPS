@@ -9,8 +9,8 @@
 #import "AppDelegate.h"
 #import "X_TabBarController.h"
 #import "WelcomeView.h"
-#import <EaseMob.h>
-#import "X_LoginViewController.h"
+
+
 @interface AppDelegate ()
 
 @end
@@ -40,23 +40,8 @@
     //添加到视图上
     [self.window addSubview:welconmV];
     
-    // 注册环信SDK
-    [[EaseMob sharedInstance] registerSDKWithAppKey:@"coderqi#lessoneasymod" apnsCertName:@""];
-    
-    // 用户验证失败
-    [self userAuthenticationFailed];
-
     
     return YES;
-}
-- (void)userAuthenticationFailed {
-    
-//    X_LoginViewController * loginVC = [self.window.rootViewController.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([X_LoginViewController class])];
-//    
-//    UINavigationController * navigationController = (UINavigationController *)self.window.rootViewController;
-//    
-//    [navigationController pushViewController:loginVC animated:NO];
-    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -65,13 +50,11 @@
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-       [[EaseMob sharedInstance] applicationDidEnterBackground:application];
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    [[EaseMob sharedInstance] applicationWillEnterForeground:application];
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 
@@ -80,9 +63,6 @@
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    
-    [[EaseMob sharedInstance] applicationWillTerminate:application];
-    
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
