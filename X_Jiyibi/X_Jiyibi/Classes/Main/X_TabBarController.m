@@ -55,7 +55,7 @@
     tabBar.delegate = self;
     
     tabBar.frame = self.tabBar.frame;
-    tabBar.backgroundColor = [UIColor cyanColor];
+    tabBar.backgroundColor = [UIColor lightGrayColor];
     
     
     [self.view addSubview:tabBar];

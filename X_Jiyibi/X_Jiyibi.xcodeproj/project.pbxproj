@@ -23,7 +23,6 @@
 		D63C5DFF1D0E7BE5009AB219 /* X_LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63C5DFE1D0E7BE5009AB219 /* X_LSViewController.m */; };
 		D63C5E021D0E7BF2009AB219 /* X_HYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63C5E011D0E7BF2009AB219 /* X_HYViewController.m */; };
 		D63C5E051D0E7BFF009AB219 /* X_GRTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63C5E041D0E7BFF009AB219 /* X_GRTableViewController.m */; };
-		D63C5E081D0E7C16009AB219 /* X_ZHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D63C5E071D0E7C16009AB219 /* X_ZHTableViewController.m */; };
 		D63C5E0A1D0E7FA5009AB219 /* clock_320px_1197016_easyicon.net.png in Resources */ = {isa = PBXBuildFile; fileRef = D63C5E091D0E7FA5009AB219 /* clock_320px_1197016_easyicon.net.png */; };
 		D63C5E161D0E8560009AB219 /* TabBar_Arena_new@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63C5E0C1D0E8560009AB219 /* TabBar_Arena_new@2x.png */; };
 		D63C5E171D0E8560009AB219 /* TabBar_Arena_selected_new@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D63C5E0D1D0E8560009AB219 /* TabBar_Arena_selected_new@2x.png */; };
@@ -49,6 +48,8 @@
 		D6645B101D0F81CA001D6AE1 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D6645B0D1D0F81CA001D6AE1 /* MenuItem.m */; };
 		D6645B121D0F8433001D6AE1 /* 屏幕快照 2016-06-14 上午8.14.32.png in Resources */ = {isa = PBXBuildFile; fileRef = D6645B111D0F8433001D6AE1 /* 屏幕快照 2016-06-14 上午8.14.32.png */; };
 		D6645B161D0F8B05001D6AE1 /* 屏幕快照 2016-06-14 上午8.44.30.png in Resources */ = {isa = PBXBuildFile; fileRef = D6645B151D0F8B05001D6AE1 /* 屏幕快照 2016-06-14 上午8.44.30.png */; };
+		D6F8142D1D0FE06300084825 /* X_ZHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F8142C1D0FE06300084825 /* X_ZHTableViewController.m */; };
+		D6F814331D1008CE00084825 /* X_HeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6F814321D1008CE00084825 /* X_HeaderView.m */; };
 		DCF96CFCB187558E5154329E /* libPods-X_Jiyibi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2E843CDEFEFFB1E0E49D27 /* libPods-X_Jiyibi.a */; };
 /* End PBXBuildFile section */
 
@@ -84,8 +85,6 @@
 		D63C5E011D0E7BF2009AB219 /* X_HYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_HYViewController.m; sourceTree = "<group>"; };
 		D63C5E031D0E7BFF009AB219 /* X_GRTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_GRTableViewController.h; sourceTree = "<group>"; };
 		D63C5E041D0E7BFF009AB219 /* X_GRTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_GRTableViewController.m; sourceTree = "<group>"; };
-		D63C5E061D0E7C16009AB219 /* X_ZHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_ZHTableViewController.h; sourceTree = "<group>"; };
-		D63C5E071D0E7C16009AB219 /* X_ZHTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_ZHTableViewController.m; sourceTree = "<group>"; };
 		D63C5E091D0E7FA5009AB219 /* clock_320px_1197016_easyicon.net.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock_320px_1197016_easyicon.net.png; sourceTree = "<group>"; };
 		D63C5E0C1D0E8560009AB219 /* TabBar_Arena_new@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBar_Arena_new@2x.png"; sourceTree = "<group>"; };
 		D63C5E0D1D0E8560009AB219 /* TabBar_Arena_selected_new@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TabBar_Arena_selected_new@2x.png"; sourceTree = "<group>"; };
@@ -116,6 +115,10 @@
 		D6645B0D1D0F81CA001D6AE1 /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItem.m; sourceTree = "<group>"; };
 		D6645B111D0F8433001D6AE1 /* 屏幕快照 2016-06-14 上午8.14.32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "屏幕快照 2016-06-14 上午8.14.32.png"; sourceTree = "<group>"; };
 		D6645B151D0F8B05001D6AE1 /* 屏幕快照 2016-06-14 上午8.44.30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "屏幕快照 2016-06-14 上午8.44.30.png"; sourceTree = "<group>"; };
+		D6F8142B1D0FE06300084825 /* X_ZHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = X_ZHTableViewController.h; sourceTree = "<group>"; };
+		D6F8142C1D0FE06300084825 /* X_ZHTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = X_ZHTableViewController.m; sourceTree = "<group>"; };
+		D6F814311D1008CE00084825 /* X_HeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = X_HeaderView.h; path = X_Jiyibi/Classes/ZhangHu/Controller/X_HeaderView.h; sourceTree = SOURCE_ROOT; };
+		D6F814321D1008CE00084825 /* X_HeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = X_HeaderView.m; path = X_Jiyibi/Classes/ZhangHu/Controller/X_HeaderView.m; sourceTree = SOURCE_ROOT; };
 		E4BBBD7D44776361679F8B1C /* Pods-X_Jiyibi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-X_Jiyibi.debug.xcconfig"; path = "Pods/Target Support Files/Pods-X_Jiyibi/Pods-X_Jiyibi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -386,8 +389,8 @@
 		D63C5DEB1D0E795F009AB219 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D63C5E061D0E7C16009AB219 /* X_ZHTableViewController.h */,
-				D63C5E071D0E7C16009AB219 /* X_ZHTableViewController.m */,
+				D6F8142B1D0FE06300084825 /* X_ZHTableViewController.h */,
+				D6F8142C1D0FE06300084825 /* X_ZHTableViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -402,6 +405,8 @@
 		D63C5DED1D0E795F009AB219 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D6F814311D1008CE00084825 /* X_HeaderView.h */,
+				D6F814321D1008CE00084825 /* X_HeaderView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -604,10 +609,11 @@
 				D63C5DFF1D0E7BE5009AB219 /* X_LSViewController.m in Sources */,
 				D63C5DFC1D0E7BB4009AB219 /* X_JYBViewController.m in Sources */,
 				D63C5E051D0E7BFF009AB219 /* X_GRTableViewController.m in Sources */,
-				D63C5E081D0E7C16009AB219 /* X_ZHTableViewController.m in Sources */,
 				D63C5DF31D0E799E009AB219 /* X_TabBarController.m in Sources */,
 				D63C5DC21D0E7930009AB219 /* main.m in Sources */,
+				D6F814331D1008CE00084825 /* X_HeaderView.m in Sources */,
 				D61B68C81D0FD45C006D30EE /* X_RegsterViewController.m in Sources */,
+				D6F8142D1D0FE06300084825 /* X_ZHTableViewController.m in Sources */,
 				D6645B051D0F80EE001D6AE1 /* WelcomeView.m in Sources */,
 				D6645B101D0F81CA001D6AE1 /* MenuItem.m in Sources */,
 				D61B68C61D0FD45C006D30EE /* X_LoginViewController.m in Sources */,
@@ -715,7 +721,9 @@
 			baseConfigurationReference = E4BBBD7D44776361679F8B1C /* Pods-X_Jiyibi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = X_Jiyibi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Saina.X-Jiyibi";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -727,7 +735,9 @@
 			baseConfigurationReference = 0147E82FEA474E1ED84BAFC3 /* Pods-X_Jiyibi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = X_Jiyibi/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Saina.X-Jiyibi";
 				PRODUCT_NAME = "$(TARGET_NAME)";

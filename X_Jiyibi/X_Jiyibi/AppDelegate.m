@@ -38,7 +38,7 @@
     
     
     //添加到视图上
-    [self.window addSubview:welconmV];
+//    [self.window addSubview:welconmV];
     
     
     return YES;

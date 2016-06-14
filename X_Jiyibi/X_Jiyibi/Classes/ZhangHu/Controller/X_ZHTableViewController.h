@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "X_HeaderView.h"
 @interface X_ZHTableViewController : UITableViewController
+
+
+@property (nonatomic,strong)UITableView *accountListTableView;
+@property (nonatomic,strong)X_HeaderView *headerView;
+
 
 @end
